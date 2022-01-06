@@ -40,7 +40,7 @@ jobs:
     - run: flutter test
     
     # Build apk.
-    - run: flutter build apk
+    - run: flutter build apk --target-platform android-arm
     
     - name: Release apk
         uses: ncipollo/release-action@v1.5.0
